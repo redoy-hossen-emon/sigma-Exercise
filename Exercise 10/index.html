@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>random name genarator</title>
+</head>
+<body>
+
+
+<h2>The chosen name is : </h2>
+<h3 class="name"></h3>
+  
+
+
+
+<script > 
+
+const h3 = document.querySelector('.name');
+
+let adj1 = 'Crazy';
+let adj2 = 'Cmazing';
+let adj3 = 'Fire';
+
+let shop1 = 'Engine';
+let shop2 = 'Foods';
+let shop3 = 'Gurments';
+
+let lword1 = 'Bros';
+let lword2 = 'Limeted';
+let lword3 = 'Hub';
+
+var rand = Math.floor(Math.random()*3 +1);
+var company1 = '';
+var company2 = '';
+var company3 = '';
+
+  if(rand==1){
+    company1 = adj1;
+  }else if(rand==2){
+    company1 = adj2
+  }else{
+    company1 = adj3
+  }
+var rand = Math.floor(Math.random()*3 +1);
+
+  if(rand==1){
+    company2 = shop1;
+  }else if(rand==2){
+    company2 = shop2
+  }else{
+    company2 = shop3
+  }
+var rand = Math.floor(Math.random()*3 +1);
+
+  if(rand==1){
+    company3 = lword1;
+  }else if(rand==2){
+    company3 = lword2
+  }else{
+    company3 = lword3
+  }
+
+
+// h3.innerHTML =`${rand1} +${rand2} +${rand3}`;
+h3.innerHTML= company1 +' '+ company2 +' '+company3;
+</script>
+</body>
+</html>
